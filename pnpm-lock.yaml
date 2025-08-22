@@ -17,6 +17,9 @@ importers:
       '@tanstack/react-form':
         specifier: ^1.19.2
         version: 1.19.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      '@tanstack/store':
+        specifier: ^0.7.4
+        version: 0.7.4
       react:
         specifier: ^19.1.1
         version: 19.1.1
@@ -552,6 +555,9 @@ packages:
 
   '@tanstack/store@0.7.2':
     resolution: {integrity: sha512-RP80Z30BYiPX2Pyo0Nyw4s1SJFH2jyM6f9i3HfX4pA+gm5jsnYryscdq2aIQLnL4TaGuQMO+zXmN9nh1Qck+Pg==}
+
+  '@tanstack/store@0.7.4':
+    resolution: {integrity: sha512-F1XqZQici1Aq6WigEfcxJSml92nW+85Om8ElBMokPNg5glCYVOmPkZGIQeieYFxcPiKTfwo0MTOQpUyJtwncrg==}
 
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -1702,7 +1708,7 @@ snapshots:
 
   '@tanstack/form-core@1.19.2':
     dependencies:
-      '@tanstack/store': 0.7.2
+      '@tanstack/store': 0.7.4
 
   '@tanstack/react-form@1.19.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
     dependencies:
@@ -1722,6 +1728,8 @@ snapshots:
       use-sync-external-store: 1.5.0(react@19.1.1)
 
   '@tanstack/store@0.7.2': {}
+
+  '@tanstack/store@0.7.4': {}
 
   '@types/babel__core@7.20.5':
     dependencies:
