@@ -17,6 +17,9 @@ importers:
       '@tanstack/react-form':
         specifier: ^1.19.2
         version: 1.19.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      '@tanstack/react-store':
+        specifier: ^0.7.4
+        version: 0.7.4(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@tanstack/store':
         specifier: ^0.7.4
         version: 0.7.4
@@ -547,14 +550,11 @@ packages:
       '@tanstack/react-start':
         optional: true
 
-  '@tanstack/react-store@0.7.3':
-    resolution: {integrity: sha512-3Dnqtbw9P2P0gw8uUM8WP2fFfg8XMDSZCTsywRPZe/XqqYW8PGkXKZTvP0AHkE4mpqP9Y43GpOg9vwO44azu6Q==}
+  '@tanstack/react-store@0.7.4':
+    resolution: {integrity: sha512-DyG1e5Qz/c1cNLt/NdFbCA7K1QGuFXQYT6EfUltYMJoQ4LzBOGnOl5IjuxepNcRtmIKkGpmdMzdFZEkevgU9bQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-
-  '@tanstack/store@0.7.2':
-    resolution: {integrity: sha512-RP80Z30BYiPX2Pyo0Nyw4s1SJFH2jyM6f9i3HfX4pA+gm5jsnYryscdq2aIQLnL4TaGuQMO+zXmN9nh1Qck+Pg==}
 
   '@tanstack/store@0.7.4':
     resolution: {integrity: sha512-F1XqZQici1Aq6WigEfcxJSml92nW+85Om8ElBMokPNg5glCYVOmPkZGIQeieYFxcPiKTfwo0MTOQpUyJtwncrg==}
@@ -1713,21 +1713,19 @@ snapshots:
   '@tanstack/react-form@1.19.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
     dependencies:
       '@tanstack/form-core': 1.19.2
-      '@tanstack/react-store': 0.7.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      '@tanstack/react-store': 0.7.4(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       decode-formdata: 0.9.0
       devalue: 5.1.1
       react: 19.1.1
     transitivePeerDependencies:
       - react-dom
 
-  '@tanstack/react-store@0.7.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
+  '@tanstack/react-store@0.7.4(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
     dependencies:
-      '@tanstack/store': 0.7.2
+      '@tanstack/store': 0.7.4
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
       use-sync-external-store: 1.5.0(react@19.1.1)
-
-  '@tanstack/store@0.7.2': {}
 
   '@tanstack/store@0.7.4': {}
 

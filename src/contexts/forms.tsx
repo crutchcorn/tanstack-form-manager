@@ -3,11 +3,13 @@ import {
   type PropsWithChildren,
   useCallback,
   useContext,
+  useLayoutEffect,
   useMemo,
   useState,
 } from "react";
-import { type AnyFormApi, useStore } from "@tanstack/react-form";
+import { type AnyFormApi } from "@tanstack/react-form";
 import { Derived } from "@tanstack/store";
+import { useStore } from "@tanstack/react-store";
 
 interface FormsContextType {
   forms: Record<string, AnyFormApi>;
@@ -65,6 +67,11 @@ export function useForms() {
       },
     });
   }, [formsContext]);
+
+  // Needed, otherwise reactivity will not occur
+  useLayoutEffect(() => {
+    return mergedFormStores.mount();
+  }, [mergedFormStores]);
 
   const formsState = useStore(mergedFormStores);
 
